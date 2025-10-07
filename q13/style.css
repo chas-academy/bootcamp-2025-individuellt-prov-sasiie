@@ -8,10 +8,20 @@
   min-height: 100vh;
   padding: 2rem;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #fff5ec;
 }
 
 .box {
   padding: 0.5rem;
   background-color: #ffd5c2;
+  flex: 1;
+  margin: 0.5rem;
+  text-align: center;
+
+}
+
+.other-box {
+  flex: 2;
 }
