@@ -9,13 +9,17 @@
 
 <body>
     <!-- ett eller flera element saknas för att formuläret ska fungera -->
-    <form onsubmit="alert('Formuläret skickades')">
+    <form onsubmit="alert('Formuläret skickades'); return false;" method="post" action="#">
         <label for="name">Namn</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
+
         <label for="email">Email</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required>
+
         <label for="message">Meddelande</label>
         <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Skicka</button>
     </form>
 </body>
 
